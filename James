@@ -41,13 +41,13 @@ def noalsaerr():
         print('')
 
 ### PARAMETERS ###
-activationWords = ['computer', 'calcutron', 'shodan', 'showdown']
+activationWords = ['James']
 tts_type = 'local' # google or local
 
 # Local speech engine initialisation
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id) # 0 = male, 1 = female
+engine.setProperty('voice', voices[0].id) # 2 = male, 2 = female
 
 # Google TTS client
 def google_text_to_wav(voice_name: str, text: str):
